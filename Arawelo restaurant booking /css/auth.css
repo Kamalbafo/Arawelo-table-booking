@@ -1,0 +1,138 @@
+main.form {
+  min-height: 88vh;
+}
+
+.container {
+  width: 70%;
+  /* margin: -20rem auto; */
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+  background-color: #fdf9f9;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.363);
+  /* z-index: -1; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: 300;
+  padding-top: 1rem;
+  color: #1a1717d3;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.form-container form p {
+  margin: 0 !important;
+  padding: 1rem;
+  text-align: left !important;
+}
+
+.form-container input {
+  /* border: none; */
+  width: 95%;
+  padding: 6.4px;
+  height: 43px;
+}
+
+.form-container .email,
+.password,
+.username,
+.firstName,
+.lastName,
+.phone,
+.confirmPassword {
+  /* border: 1px solid rgb(209, 209, 209); */
+  border-radius: 4px;
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container button {
+  display: block;
+  width: 93%;
+  padding: 0.8rem 1rem;
+  margin: auto;
+  cursor: pointer;
+  background-color: #37a30d;
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+  border-radius: 2px;
+}
+
+.form-container button:hover {
+  background: #1f6602;
+}
+
+.form-container p {
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+
+.error-field {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 25vw;
+  padding: 1.3rem;
+  font-size: 1.1em;
+  background: rgb(233, 41, 41);
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: none;
+  animation: toast 350ms linear;
+}
+
+.errorMsg {
+  color: rgb(233, 41, 41);
+  border-radius: 3px;
+}
+
+@keyframes toast {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.form > * {
+  position: relative;
+}
+
+small {
+  color: #e74c3c;
+  visibility: hidden;
+  display: block;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+@media (max-width: 420px) {
+  .container {
+    margin-top: 48px;
+    width: 80%;
+  }
+}

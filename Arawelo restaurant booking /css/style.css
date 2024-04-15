@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  background-color: #fff;
+  max-height: 13vh;
+  box-shadow: 0px -2px 13px rgba(0, 0, 0, 0.397);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.7rem 1rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+header a {
+  display: block;
+  margin: 0 1rem;
+  text-transform: capitalize;
+  color: rgba(51, 51, 51, 0.651);
+  transition: color 0.5s linear;
+  white-space: nowrap;
+  font-size: 13px;
+}
+header a:hover {
+  color: #000;
+}
+header .brand i {
+  font-size: 4rem;
+  color: #000;
+  transform: translate(-30%, -39%);
+}
+
+main .hero {
+  background-image: url('images/dreamstime_xxl_142289482.jpg');
+  height: 87vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .overlay {
+  background-color: rgba(0, 0, 0, 0.431);
+  height: 87vh;
+}
+main .hero-text h1 {
+  text-align: center;
+  padding: 3rem;
+  color: #ddd;
+  letter-spacing: 2px;
+}
+main .hero-text p {
+  text-align: center;
+  color: rgb(212, 201, 201);
+  font-style: italic;
+  padding: 1rem 5rem;
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 7px 1px 79px -13px rgba(0, 0, 0, 0.404) inset;
+}
+footer .social-icons span {
+  margin: 0 1rem;
+}
+footer i {
+  font-size: 1.3rem;
+}
+footer i:hover {
+  animation: animate-icon 2.5s infinite linear;
+}
+
+.disclaimer p {
+  font-size: 0.6rem;
+}
+
+@keyframes animate-icon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .hero-text h1 {
+    padding: 1rem;
+  }
+  main .hero-text p {
+    font-size: 15px;
+  }
+
+  header a {
+   
+    font-size: 10px;
+  }
+
+  .social-icons{
+    display: flex;
+  }
+
+  .fab {
+    font-size: 12px;
+  }
+
+  .copyright{
+    font-size: 10px;
+  }
+
+  footer > * {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 490px) {
+  header a {
+    white-space: nowrap;
+  }
+  main .hero-text h1 {
+    padding: 3rem;
+  }
+  main .hero-text p {
+    font-size: 19px;
+  }
+
+  header ul{
+    margin-left: -23px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    white-space: nowrap;
+  }
+  header {
+    max-height: 12vh;
+  }
+  header .brand i {
+    font-size: 3.3rem;
+  }
+  main .hero,
+  main .overlay {
+    height: 88vh;
+  }
+  footer .social-icons span {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  header {
+    max-height: 10vh;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  header .brand i {
+    transform: translate(-6%, -33%);
+  }
+  main .hero,
+  main .overlay {
+    height: 90vh;
+  }
+  footer .social-icons span {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+}

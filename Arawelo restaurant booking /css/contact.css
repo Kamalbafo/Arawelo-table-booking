@@ -1,0 +1,102 @@
+main.contact {
+  min-height: 88vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact .contact-body {
+  /* display: flex; */
+  padding-top: 5rem;
+}
+.contact-header {
+  width: 80%;
+  padding-top: 40vh;
+  margin: 0 auto;
+}
+.contact-header h1 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 200;
+  color: rgb(15, 65, 34);
+}
+
+.contact-hero {
+  min-height: 88vh;
+  background: url("../images/pexels-nicolas-postiglioni-943541.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.inner-layer {
+  background: #0000008e;
+  height: 88vh;
+}
+.inner-layer h1 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+}
+
+main.contact .contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1rem;
+}
+main.contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+main.contact ul li,
+main.contact p {
+  margin: 0.7rem 0;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 750px) {
+  .contact-header {
+    padding-top: 22vh;
+  }
+  .inner-layer h1 {
+    font-size: 30px;
+  }
+  .contact .contact-body {
+    display: block;
+    padding-top: 3rem;
+  }
+  .contact .contact-header {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  main.contact .contact-details {
+    display: block;
+  }
+  .address {
+    margin-bottom: 2rem;
+  }
+
+  main.contact ul {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 420px) {
+  .inner-layer h1 {
+    font-size: 25px;
+  }
+  main.contact .contact-details {
+    display: block;
+  }
+  .contact .contact-body {
+    display: block;
+    padding-top: 5rem;
+  }
+  .contact .contact-header {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  nav a {
+    color: #fff;
+  }
+}
